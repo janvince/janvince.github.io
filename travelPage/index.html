@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Satisfy|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="assets/css/design.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+</head>
+<body>
+    <!-- Main wrapper -->
+    <div class="wrapper">
+        <div id="app" v-bind:class="{ green: isGreen, pink: isPink }">
+            <!-- Mobile menu -->
+            <div class="mob-menu bg" v-bind:class="{ show: showMenu }">
+                <div class="clip-left"></div>
+                <div class="profile-cover">
+                    <img src="assets/images/Image 4.png" alt="">
+                </div>
+                <i v-on:click="showMenu = !showMenu" class="fa fa-remove"></i>
+                <div class="round-container relative">
+                    <img src="assets/images/girl.png" alt="girl">
+                    <button class="edit-button bg">
+                        <i class="fa fa-pencil-square-o"></i>
+                    </button>
+                </div>
+                <div class="c-mx-lg c-mb-lg">
+                    <p>Amanda Snow</p>
+                    <small>Los Angeles California </small>
+                </div>
+                <div class="mobile-links c-ml-lg">
+                    <ul>
+                        <li> <i class="fa fa-home"></i><a href="">HOME</a></li>
+                        <li> <i class="fa fa-flag"></i><a href="">EXPLORE</a></li>
+                        <li> <i class="fa fa-comment"></i><a href="" class="relative">MESSAGES <span class="message-alert">2</span></a></li>
+                        <li> <i class="fa fa-tag"></i><a href="">BOOKINGS</a></li>
+                        <li> <i class="fa fa-map-signs"></i><a href="">DESTINATIONS</a></li>
+                        <li> <i class="fa fa-info-circle"></i><a href="">ABOUT US</a></li>
+                    </ul>
+                </div>
+               
+            </div>
+             <!--end-->
+            <!-- Header-->
+            <header>
+                <div class="identity">Travelore</div> <!-- Insert logo / appname here -->
+                <ul>                           
+                    <li> <a href="#banner">Home</a> </li>
+                    <li> <a href="#places">Explore</a> </li>
+                    <li> <a href="#destinations">Destinations</a>  </li>
+                    <li> <a href="">About us</a> </li>
+                </ul>
+                <div class="mobile">
+                    <i v-on:click="showMenu = !showMenu" class="fa fa-reorder"></i>
+                </div>
+            </header>
+            <!-- end -->
+            <!-- Banner Section -->
+            <section id="banner">
+                <div class="cover-banner-img">
+                    <div class="overlay"></div>
+                    <div class="clip"></div>
+                    <img src="assets/images/cover.jpeg" alt="">
+                </div>
+                <div class="header-title">
+                    <h1>DISCOVER</h1>
+                    <h6>NATURE AND SELF</h6>
+                    <div class="login">
+                        <div class="form-wrap">
+                            <label for="">Username</label>
+                            <input type="text">
+                        </div>
+                        <div class="form-wrap">
+                            <label for="">Password</label>
+                            <input type="password">
+                        </div><br><br>
+                        <div class="inline-wrap">
+                            <button class="primary-btn">Login</button>
+                            <p>FORGOT PASSWORD ?</p> 
+                        </div>  
+                    </div>
+                </div>
+            </section>
+            <!-- End Banner -->
+            <!-- Explore -->
+            <section id="places">
+                <div class="grid-container-parent">
+                    <div class="grid-item">
+                        <div class="grid-container-image">
+                            <div class="grid-item-1">
+                                <img src="assets/images/Image 3.png" alt="dummy-img">
+                            </div>
+                            <div class="grid-item-2">
+                                <img src="assets/images/Image 2.png" alt="dummy-img">
+                            </div>
+                            <div class="grid-item-3">
+                                <img src="assets/images/Image 5.png" alt="dummy-img">
+                            </div>
+                            <div class="grid-item-4">
+                                <img src="assets/images/Image 4.png" alt="dummy-img">
+                            </div>
+                            <div class="grid-item-5">
+                                <img src="assets/images/Image 1.png" alt="dummy-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item c-pa-lg bg relative">
+                        <div class="clip-left"></div>
+                        <div class="section-title c-my-sm">
+                            Explore...
+                        </div>
+                        <p class="c-my-md text-justify">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                        </p>
+                        <button class="ghost-btn c-my-md">VISIT PLACES</button>
+                    </div>
+                </div>
+            </section>
+            <!-- HOW it Works -->
+            <section id="how-works" class="bg relative below">
+                <div class="clip-img below"></div>
+                <div class="clip-left"></div>
+                <div class="clip-left-top"></div>
+                <div class="section-title text-left c-px-lg c-pt-lg">How it Works</div>
+                <div class="text-center c-py-lg">
+                    <div class="block c-my-md">
+                        <img src="assets/images/bag.svg" alt="baggage"/>
+                        <div class="inline-block text-left c-mx-md">
+                            <h5 class="c-my-md"> PREPARED </h5>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> 
+                                sed do eiusmod tempor incididunt ut labore <br>
+                                et dolore magna aliqua. Ut enim ad minim veniam.<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="block c-my-md">
+                        <img src="assets/images/flag.svg" alt="flag"/>
+                        <div class="inline-block text-left c-mx-md">
+                            <h5 class="c-my-md"> ARRIVED </h5>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+                                sed do eiusmod tempor incididunt.<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="block c-my-md">
+                        <img src="assets/images/mountain.svg" alt="mountain"/>
+                        <div class="inline-block text-left c-mx-md">
+                            <h5 class="c-my-md"> UNWIND </h5>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+                                sed do eiusmod tempor incididunt ut labore.<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end how it works-->
+            <!-- Result -->
+            <section id="destinations" class="bg-gradient below">
+            <div class="section-title text-center c-py-lg c-px-lg">Top Destinations</div>
+            <!-- 1st example -->
+                <div class="flex-container">
+                    <div v-for="n in 4" class="slide">
+                        <div class="flip-card c-my-md">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                <img v-if="n === 1" src="https://images.unsplash.com/photo-1538970272646-f61fabb3a8a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=341&q=80" alt="place" style="width:300px;height:400px;">
+                                <img v-else-if="n === 2" src="https://images.unsplash.com/photo-1545663360-2ef0698872aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80" alt="place" style="width:300px;height:400px;">
+                                <img v-else-if="n === 3" src="https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=462&q=80" alt="place" style="width:300px;height:400px;">
+                                <img v-else src="https://images.unsplash.com/photo-1506104489822-562ca25152fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=749&q=80" alt="place" style="width:300px;height:400px;">
+                                <div class="front-title">
+                                    <h1> TRAVEL NOW! </h1>
+                                </div>
+                                </div>
+                                <div class="flip-card-back">
+                                <div class="back-content">
+                                    <div class="clip-image">
+                                            <img v-if="n === 1" src="https://images.unsplash.com/photo-1538970272646-f61fabb3a8a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=341&q=80" alt="place" style="width:300px;height:400px;">
+                                            <img v-else-if="n === 2" src="https://images.unsplash.com/photo-1545663360-2ef0698872aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80" alt="place" style="width:300px;height:400px;">
+                                            <img v-else-if="n === 3" src="https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=462&q=80" alt="place" style="width:300px;height:400px;">
+                                            <img v-else src="https://images.unsplash.com/photo-1506104489822-562ca25152fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=749&q=80" alt="place" style="width:300px;height:400px;">
+                                    </div>
+                                    <div class="price">
+                                    <sup>$100</sup><span>/<span><sub>day</sub>
+                                    </div> 
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </div><br><br>
+            </section>
+            <section id="about">
+                <div class="image-back">
+                    <div class="absolute">
+                        <div class="section-title text-center c-py-lg c-px-lg">About Us</div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreasa
+                            et dolore magna aliqua. Ut enim ad minim veniam. Sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam.
+                        </p>
+                    </div>    
+                </div>
+              
+            </section>
+            <!-- end result -->
+            <footer>
+                <div class="footer-container flex-container">
+                    <ul>
+                        <li class="title">Services</li>
+                        <li><a href="#">Photoshoot</a></li>
+                        <li><a href="#">Transportation</a></li>
+                        <li><a href="#">Accomodation</a></li>
+                    </ul>
+                    <ul>
+                        <li class="title">Safety</li>
+                        <li><a href="#">Medical</a></li>
+                        <li><a href="#">Partner Hospital</a></li>
+                    </ul>
+                    <ul>
+                        <li class="title">Policy</li>
+                        <li><a href="#">Customer Care</a></li>
+                        <li><a href="#">Fair Policy</a></li>
+                        <li><a href="#">Travel Rules</a></li>
+                    </ul>
+                    <ul>
+                        <li class="title">Contacts</li>
+                        <li><a href="#">Sample Details</a></li>
+                        <li><a href="#">Contact Me</a></li>
+                        <li><a href="#">Know my Address</a></li>
+                    </ul>
+                    <div>
+                        <img src="assets/images/connect.png" alt="connect"><br>
+                        <button>
+                                <img src="assets/images/facebook.png" alt="facebook">
+                        </button>
+                        <button>
+                                <img src="assets/images/twitter.png" alt="twitter">
+                        </button>
+                        <button>
+                                <img src="assets/images/instagram.png" alt="instagram">
+                        </button><br><br>
+                        <small>&copy; Vince Panes Simple Travel Template (2019)</small>
+                        
+                    </div>
+                </div>
+
+            </footer>
+            
+            <a href="#" class="scrollToTop">
+                <i class="fa fa-chevron-up"></i>
+            </a>
+            <!-- color changer-->
+            <div id="float-btn">
+                <span>CHANGE THEME</span><br><br>
+                <button v-on:click="toGreen" class="round-btn green"></button>
+                <button v-on:click="toPink"  class="round-btn pink"></button>
+                <button v-on:click="toBlue"  class="round-btn blue"></button>
+            </div>
+            <!-- end -->
+        </div>
+    </div>
+    <!-- Load javascript -->
+   
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/ui.js"></script>
+</body>
+</html>

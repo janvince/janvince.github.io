@@ -1,0 +1,46 @@
+
+     /*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+        #banner .header-title {
+            top: 50%;
+            left: 50%;
+            margin: 0px;
+            text-align: center;
+        }
+        #places .grid-container-parent {
+            display: block;
+        }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+     
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+        header { 
+            ul { display: none }
+            .mobile{ 
+                margin: 0 15px;
+                .fa-reorder { color: white; font-size: 20px; }
+            }
+        }
+        .mobile { display: block; }
+        .clip-left { display: none; }
+        .clip-left-top { display: none; }
+        .clip-img { width: 100%; height: 50%; }
+        #about .image-back .absolute { width: 300px; }
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+
+    }
