@@ -1,0 +1,328 @@
+.vr_main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.vr_main .vr_body {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.vr_main .vr_body .loader {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 124px;
+}
+
+.vr_main .vr_body .loader .block {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border: 1px solid #ff5b00;
+}
+
+.vr_main .vr_body .loader .block:nth-child(1) {
+  -webkit-animation: glowA 1s alternate 1.2s infinite;
+          animation: glowA 1s alternate 1.2s infinite;
+}
+
+.vr_main .vr_body .loader .block:nth-child(2) {
+  -webkit-animation: glowB 1s alternate 1.4s infinite;
+          animation: glowB 1s alternate 1.4s infinite;
+}
+
+.vr_main .vr_body .loader .block:nth-child(3) {
+  -webkit-animation: glowC 1s alternate 1.4s infinite;
+          animation: glowC 1s alternate 1.4s infinite;
+}
+
+.vr_main .vr_body .loader .block:nth-child(4) {
+  -webkit-animation: glowD 1s alternate 1.6s infinite;
+          animation: glowD 1s alternate 1.6s infinite;
+}
+
+.vr_main .vr_body .loader .block:nth-child(5) {
+  -webkit-animation: glowE 1s alternate 1.8s infinite;
+          animation: glowE 1s alternate 1.8s infinite;
+}
+
+.vr_main .vr_body .loader .block:nth-child(6) {
+  -webkit-animation: glowF 1s alternate 2s infinite;
+          animation: glowF 1s alternate 2s infinite;
+}
+
+.vr_main .vr_body .loader .block:nth-child(7) {
+  -webkit-animation: glowG 1s alternate 2.2s infinite;
+          animation: glowG 1s alternate 2.2s infinite;
+}
+
+.vr_main .vr_body .loader .block:nth-child(8) {
+  -webkit-animation: glowH 1s alternate 2.4s infinite;
+          animation: glowH 1s alternate 2.4s infinite;
+}
+
+.vr_main .vr_body .vr_left_wing {
+  width: 80px;
+  height: 60px;
+  border-top-left-radius: 20%;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 30%;
+  border: 2px solid #ff5b00;
+  border-right: 0px solid transparent;
+}
+
+.vr_main .vr_body .vr_left_wing > div {
+  height: 20px;
+  width: 5px;
+  background: #ff5b00;
+  position: absolute;
+  top: 12px;
+  left: -10px;
+}
+
+.vr_main .vr_body .vr_right_wing {
+  width: 80px;
+  height: 60px;
+  border-top-right-radius: 20%;
+  border-bottom-right-radius: 20%;
+  border-bottom-left-radius: 30%;
+  border: 2px solid #ff5b00;
+  border-left: 0px solid transparent;
+}
+
+.vr_main .vr_body .vr_right_wing > div {
+  height: 20px;
+  width: 5px;
+  background: #ff5b00;
+  position: absolute;
+  top: 12px;
+  right: -10px;
+}
+
+@-webkit-keyframes glowA {
+  from {
+    background: transparent;
+  }
+  to {
+    background: #ff5b00;
+  }
+}
+
+@keyframes glowA {
+  from {
+    background: transparent;
+  }
+  to {
+    background: #ff5b00;
+  }
+}
+
+@-webkit-keyframes glowB {
+  from {
+    background: transparent;
+  }
+  to {
+    background: #ff5b00;
+  }
+}
+
+@keyframes glowB {
+  from {
+    background: transparent;
+  }
+  to {
+    background: #ff5b00;
+  }
+}
+
+@-webkit-keyframes glowC {
+  from {
+    background: transparent;
+  }
+  to {
+    background: #ff5b00;
+  }
+}
+
+@keyframes glowC {
+  from {
+    background: transparent;
+  }
+  to {
+    background: #ff5b00;
+  }
+}
+
+@-webkit-keyframes glowD {
+  from {
+    background: transparent;
+  }
+  to {
+    background: #ff5b00;
+  }
+}
+
+@keyframes glowD {
+  from {
+    background: transparent;
+  }
+  to {
+    background: #ff5b00;
+  }
+}
+
+@-webkit-keyframes glowE {
+  from {
+    background: transparent;
+  }
+  to {
+    background: #ff5b00;
+  }
+}
+
+@keyframes glowE {
+  from {
+    background: transparent;
+  }
+  to {
+    background: #ff5b00;
+  }
+}
+
+@-webkit-keyframes glowF {
+  from {
+    background: transparent;
+  }
+  to {
+    background: #ff5b00;
+  }
+}
+
+@keyframes glowF {
+  from {
+    background: transparent;
+  }
+  to {
+    background: #ff5b00;
+  }
+}
+
+@-webkit-keyframes glowG {
+  from {
+    background: transparent;
+  }
+  to {
+    background: #ff5b00;
+  }
+}
+
+@keyframes glowG {
+  from {
+    background: transparent;
+  }
+  to {
+    background: #ff5b00;
+  }
+}
+
+@-webkit-keyframes glowH {
+  from {
+    background: transparent;
+  }
+  to {
+    background: #ff5b00;
+  }
+}
+
+@keyframes glowH {
+  from {
+    background: transparent;
+  }
+  to {
+    background: #ff5b00;
+  }
+}
+
+#loader-wrapper .loader-section {
+  position: fixed;
+  top: 0;
+  width: 51%;
+  height: 100%;
+  background: #12283c;
+  z-index: 1000;
+}
+
+#loader-wrapper .loader-section.section-left {
+  left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+  right: 0;
+}
+
+#loader {
+  position: absolute;
+  z-index: 1001;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* Loaded */
+.loaded #loader-wrapper .loader-section.section-left {
+  -webkit-transform: translateX(-100%);
+  /* Chrome, Opera 15+, Safari 3.1+ */
+  /* IE 9 */
+  transform: translateX(-100%);
+  /* Firefox 16+, IE 10+, Opera */
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+  -webkit-transform: translateX(100%);
+  /* Chrome, Opera 15+, Safari 3.1+ */
+  /* IE 9 */
+  transform: translateX(100%);
+  /* Firefox 16+, IE 10+, Opera */
+}
+
+.loaded #loader-wrapper .loader-section.section-right,
+.loaded #loader-wrapper .loader-section.section-left {
+  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.loaded #loader {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100vh);
+}
+
+/*
+
+.loaded #loader-wrapper {
+    visibility: hidden;
+}
+
+
+.loaded #loader-wrapper {
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
+
+    -webkit-transition: all 0.3s 0.6s ease-out; 
+            transition: all 0.3s 0.6s ease-out;
+}
+
+*/
+/*# sourceMappingURL=style.css.map */
