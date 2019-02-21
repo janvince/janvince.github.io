@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Heroes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="assets/css/design.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+</head>
+<body>
+    <!-- Main wrapper -->
+    <div class="wrapper">
+        <div id="app">
+            <header><!-- Header --> 
+            <ul class="clearfix" id="navigation">
+                <li class="navLinks">HOME</li>
+                <li class="navLinks" v-on:click="loadServices()">SERVICES</li>
+                <li class="navLinks" v-on:click="loadHero()">HEROES</li>
+                <li class="navLinks" v-on:click="loadContact()">CONTACT</li>
+                <li class="navLinks">ABOUT</li>
+            </ul>
+        </header>
+            <!-- Hero Section -->
+            <template v-if="showHero">
+                <section class="hero-section" v-bind:class="{ defaultAnim: showHero }">
+                    <div class="hero_name" ref="heroName">
+                        <img :src="imgurl + items[nextHero].heroNameTop + '.svg'" alt="">
+                        <div class="vLine"></div>  
+                    </div>
+            
+                    <div class="content">
+                        <h1> SINGLE SECTION PAGE TEMPLATE</h1> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <button> HIRE HERO</button>
+                    </div>
+                    <div class="foreground_image" ref="front_ref">
+                        <img :src="imgurl + items[nextHero].heroNameFront + '.png'" alt="">
+                    </div>   
+                    <div class="background_image">
+                        <img ref="back_ref" :src="imgurl + items[nextHero].heroNameBack + '.png'" alt="">
+                    </div>
+                    <button class="heroNextThumb" v-on:click="nextHeroFunc" ref="nextBtn">
+                            <img v-if="nextHero == items.length - 1" :src="imgurl + items[0].heroNameFront + '.png'" alt="">
+                            <img v-else="nextHero == items.length - 1" :src="imgurl + items[nextHero + 1].heroNameFront + '.png'" alt="">
+                    </button>
+                </section>
+            </template>
+            <!-- end -->
+
+            <!-- Services Content -->
+            <template v-if="showServices">
+                <section class="service-section" v-bind:class="{ defaultAnim: showServices }">
+                    <div class="serviceBG"><img src="assets/images/doctor.png" alt=""></div>
+                    <div class="grid-container c-mt-xg">
+                        <div class="grid-item relative">
+                            <div class="mainWrap">
+                                <div class="wrapper">
+                                    <div class="c1">
+                                        <div class="c2">
+                                        <div class="c3">
+                                            <div class="rect1">
+                                            <div class="miniC">
+                                                <div class="miniC1"><div class="box"></div></div>
+                                                <div class="miniC2"><div class="box"></div></div>
+                                                <div class="miniC3"><div class="box"></div></div>
+                                                <div class="miniC4"><div class="box"></div></div>
+                                            </div>
+                                            <div class="c4">
+                                                <div class="rect2"> <div class="rect3"></div></div>
+                                            </div>
+                                            <div class="c5"></div><div class="c6"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item relative">
+                            <h1 class="c-mt-lg"> SOMETHING STRANGE CSS </h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua  ipsum dolor sit amet, consectetur adipiscing.</p>
+                            <button>LEARN MORE</button>
+                        </div>
+                    </div> 
+                </section>
+            </template>
+            <!-- end -->
+
+            <!-- Services Content -->
+            <template v-if="showContact">
+                <section class="contact-section" v-bind:class="{ defaultAnim: showContact }">
+                    <div class="grid-container c-mt-xg">
+                        <div class="grid-item">
+                            <img class="glitch-img" src="assets/images/glitchStarlord.gif" alt="">
+                        </div>
+                        <div class="grid-item">
+                            <h1 class="c-mt-lg"> USING CUSTOM GIF</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <ul>
+                                <li> <img src="assets/images/Group 43.svg" alt="facebook"><a href="#">design@facebook.com</a></li>
+                                <li> <img src="assets/images/Group 44.svg" alt="twitter"><a href="#">myDesign@twitter.com</a></li>
+                                <li> <img src="assets/images/Group 46.svg" alt="insta"><a href="#">instagramable@gmail.com</a></li>
+                                <li> <img src="assets/images/Group 45.svg" alt="email"><a href="#">janvince@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div> 
+                </section>
+            </template>
+            <!-- end -->
+        </div>      
+    </div>
+    <!-- Load javascript -->
+   
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/ui.js"></script>
+</body>
+</html>
