@@ -1,0 +1,309 @@
+body {
+  background: #15283C;
+  color: white;
+}
+
+.animation {
+  margin-top: 100px;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+}
+
+.animation img {
+  position: absolute;
+}
+
+.animation .v1 {
+  -webkit-animation: scale ease-in-out 3.5s infinite alternate;
+          animation: scale ease-in-out 3.5s infinite alternate;
+}
+
+.visible {
+  opacity: 1 !important;
+  -webkit-transition: opacity 1s linear;
+  transition: opacity 1s linear;
+}
+
+.invisible {
+  visibility: hidden !important;
+}
+
+.girl {
+  position: relative;
+  top: 150px;
+  left: -60px;
+  z-index: 1;
+}
+
+.girl .g2 {
+  top: 130px;
+  left: 58px;
+  z-index: -1;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-animation: gAnimation2 linear 0.8s infinite alternate;
+          animation: gAnimation2 linear 0.8s infinite alternate;
+}
+
+.girl .g3 {
+  top: 134px;
+  left: -9px;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-animation: gAnimation linear 0.8s infinite alternate;
+          animation: gAnimation linear 0.8s infinite alternate;
+}
+
+.vr {
+  position: relative;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out;
+}
+
+.vr img {
+  z-index: -1;
+}
+
+.vr .v2 {
+  position: absolute;
+  top: 52px;
+  left: 55px;
+  -webkit-animation: fading linear 0.8s infinite alternate;
+          animation: fading linear 0.8s infinite alternate;
+}
+
+.vr .v4 {
+  position: absolute;
+  top: -53px;
+  left: 471px;
+  -webkit-animation: scale linear 1.5s infinite alternate;
+          animation: scale linear 1.5s infinite alternate;
+}
+
+.vr .v3 {
+  position: absolute;
+  top: 77px;
+  left: 338px;
+  -webkit-animation: rotate ease 1.5s infinite alternate;
+          animation: rotate ease 1.5s infinite alternate;
+}
+
+.vr .v5 {
+  position: absolute;
+  top: 108px;
+  left: 458px;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-animation: fading ease 1.5s infinite alternate;
+          animation: fading ease 1.5s infinite alternate;
+}
+
+.vr .v6 {
+  position: absolute;
+  top: 97px;
+  left: 56px;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-animation: scale ease 1.5s infinite alternate;
+          animation: scale ease 1.5s infinite alternate;
+}
+
+.bc {
+  position: relative;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out;
+}
+
+.bc img {
+  z-index: -1;
+}
+
+.bc .b1 {
+  position: absolute;
+  top: 20px;
+  left: 55px;
+  -webkit-animation: scale linear 2.2s infinite alternate;
+          animation: scale linear 2.2s infinite alternate;
+}
+
+.bc .b2 {
+  position: absolute;
+  top: 10px;
+  left: 100px;
+  -webkit-animation: fading linear 0.4s infinite alternate;
+          animation: fading linear 0.4s infinite alternate;
+}
+
+.bc .b4 {
+  position: absolute;
+  top: 130px;
+  left: 185px;
+  -webkit-animation: scale linear 1s infinite alternate;
+          animation: scale linear 1s infinite alternate;
+}
+
+.bc .b3 {
+  position: absolute;
+  top: 100px;
+  left: 45px;
+  -webkit-animation: fading ease .5s infinite alternate;
+          animation: fading ease .5s infinite alternate;
+}
+
+.bc .b5 {
+  position: absolute;
+  top: 270px;
+  left: 335px;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-animation: fading ease-in 0.5s infinite alternate;
+          animation: fading ease-in 0.5s infinite alternate;
+}
+
+.bc .b6 {
+  position: absolute;
+  top: 100px;
+  left: 115px;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-animation: scale ease 1.5s infinite alternate;
+          animation: scale ease 1.5s infinite alternate;
+}
+
+.hologram {
+  position: relative;
+}
+
+.hologram img {
+  z-index: -1;
+}
+
+.hologram .h1 {
+  top: 436px;
+  left: -175px;
+}
+
+.hologram .h2 {
+  top: 400px;
+  left: -232px;
+  -webkit-animation: scale ease 1s infinite alternate;
+          animation: scale ease 1s infinite alternate;
+}
+
+.hologram .h3 {
+  top: 332px;
+  left: -100px;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-animation: fading ease 0.8s infinite alternate;
+          animation: fading ease 0.8s infinite alternate;
+}
+
+@-webkit-keyframes gAnimation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+}
+
+@keyframes gAnimation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+}
+
+@-webkit-keyframes gAnimation2 {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+@keyframes gAnimation2 {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+@-webkit-keyframes scale {
+  from {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scale {
+  from {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes fading {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fading {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.4;
+  }
+}
+/*# sourceMappingURL=style.css.map */

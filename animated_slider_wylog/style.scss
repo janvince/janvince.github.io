@@ -1,0 +1,169 @@
+body {
+    background: #15283C;
+    color: white;
+}
+.animation {
+    margin-top: 100px;
+    img { position: absolute; }
+    transform: scale(0.6);
+    .v1 {
+        animation: scale ease-in-out 3.5s infinite alternate;
+    }
+}
+.visible {
+    opacity: 1!important;
+    transition: opacity 1s linear;
+}
+.invisible {
+    visibility: hidden!important;
+}
+.girl {
+    position: relative;
+    top: 150px;
+    left: -60px;
+    z-index: 1;
+    .g2 {
+        top: 130px;
+        left: 58px;
+        z-index: -1;
+        transform-origin: 0% 0%;
+        animation: gAnimation2 linear 0.8s infinite alternate;
+    }
+    .g3 {
+        top: 134px;
+        left: -9px;
+        transform-origin: 0% 0%;
+        animation: gAnimation linear 0.8s infinite alternate;
+        }
+  }
+
+.vr {
+    position: relative;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+    img {
+        z-index: -1;
+    }
+    .v2 {
+        position: absolute;
+        top: 52px;
+        left: 55px;
+        animation: fading linear 0.8s infinite alternate;
+    }
+    .v4 {
+        position: absolute;
+        top: -53px;
+        left: 471px;
+        animation: scale linear 1.5s infinite alternate;
+    }
+    .v3 {
+        position: absolute;
+        top: 77px;
+        left: 338px;
+        animation: rotate ease 1.5s infinite alternate;
+    }
+    .v5 {
+        position: absolute;
+        top: 108px;
+        left: 458px;
+        transform-origin: 0% 0%;    
+        animation: fading ease 1.5s infinite alternate;
+    }
+    .v6 {
+        position: absolute;
+        top: 97px;
+        left: 56px;
+        transform-origin: 0% 0%;    
+        animation: scale ease 1.5s infinite alternate;
+    }
+   
+}
+.bc {
+    position: relative;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+    img {
+        z-index: -1;
+    }
+    .b1 {
+        position: absolute;
+        top: 20px;
+        left: 55px;
+        animation: scale linear 2.2s infinite alternate;
+    }
+    .b2 {
+        position: absolute;
+        top: 10px;
+        left: 100px;
+        animation: fading linear 0.4s infinite alternate;
+    }
+    .b4 {
+        position: absolute;
+        top: 130px;
+        left: 185px;
+        animation: scale linear 1s infinite alternate;
+    }
+    .b3 {
+        position: absolute;
+        top: 100px;
+        left: 45px;
+        animation: fading ease .5s infinite alternate;
+    }
+    .b5 {
+        position: absolute;
+        top: 270px;
+        left: 335px;
+        transform-origin: 0% 0%;    
+        animation: fading ease-in 0.5s infinite alternate;
+    }
+    .b6 {
+        position: absolute;
+        top: 100px;
+        left: 115px;
+        transform-origin: 50% 50%;    
+        animation: scale ease 1.5s infinite alternate;
+    }
+   
+}
+.hologram {
+    position: relative;
+    img {
+        z-index: -1;
+    }
+    .h1 {
+        top: 436px;
+        left: -175px;
+    }
+    .h2 {
+        top: 400px;
+        left: -232px;
+        animation: scale ease 1s infinite alternate;
+    }
+    .h3 {
+        top: 332px;
+        left: -100px;
+        transform-origin: 0% 0%;    
+        animation: fading ease 0.8s infinite alternate;
+    }
+}
+
+@keyframes gAnimation {
+    from { transform: rotate(0deg); }
+    to {  transform: rotate(6deg); }
+}  
+@keyframes gAnimation2 {
+    from { transform: rotate(0deg); }
+    to {  transform: rotate(-10deg); }
+}
+@keyframes scale {
+    from { transform: scale(0.9); }
+    to {   transform: scale(1); }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg) }
+    to {   transform: rotate(360deg) }
+}
+@keyframes fading {
+    from { opacity: 1; }
+    to { opacity: 0.4; }
+}
