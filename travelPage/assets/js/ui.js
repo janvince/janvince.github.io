@@ -24,3 +24,13 @@ $(function () {
       $( ".flip-card-back:odd" ).css( "background-color", "#F37021" );
   });
 
+  $(document).ready(function(){
+    $('.my-slick').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        fade: true,
+        autoplay: true
+    });
+  });

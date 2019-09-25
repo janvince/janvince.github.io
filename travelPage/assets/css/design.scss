@@ -246,16 +246,18 @@ header {
             top: 0; right: 0;
             -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
             clip-path: polygon(100% 0, 0 100%, 100% 100%);
+            z-index: 2;
         }
         .overlay {
             background-color: hsla(0, 0%, 0%, 0.548);
             width: 100%;
             height: 100%;
             position: absolute;
+            z-index: 1;
         }
         img {
             width: 100%;
-            height: 100%;
+            height: 100vh;
             object-fit: cover;
         }
     }
@@ -263,6 +265,7 @@ header {
         position: absolute;
         top: 45%;
         left: 25%;
+        z-index: 3;
         transform: translate(-50%, -50%);
         margin: 0 20px;
         h1 {
@@ -539,6 +542,7 @@ footer {
     bottom: 0;
     right: 0;
     margin: 30px;
+    z-index: 4;
     text-align: center;
     span { color: white; font-weight: 400;}
     .green { background: #26C281;}

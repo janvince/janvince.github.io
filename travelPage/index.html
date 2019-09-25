@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster|Satisfy|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="assets/css/design.css">
     <link rel="stylesheet" href="assets/css/mobile.css">
 </head>
@@ -54,6 +55,7 @@
                     <li> <a href="#places">Explore</a> </li>
                     <li> <a href="#destinations">Destinations</a>  </li>
                     <li> <a href="#about">About us</a> </li>
+                    <li> <a href="http://www.wylog.com/">WyLog</a> </li>
                 </ul>
                 <div class="mobile">
                     <i v-on:click="showMenu = !showMenu" class="fa fa-reorder"></i>
@@ -65,7 +67,14 @@
                 <div class="cover-banner-img">
                     <div class="overlay"></div>
                     <div class="clip"></div>
-                    <img src="assets/images/cover.jpeg" alt="">
+                    <div class="my-slick">
+                        <img src="https://images.pexels.com/photos/373575/pexels-photo-373575.jpeg?cs=srgb&dl=amalfi-amalfi-coast-architecture-373575.jpg&fm=jpg" alt="">    
+                        <img src="https://images.pexels.com/photos/2082103/pexels-photo-2082103.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                        <img src="assets/images/cover.jpeg" alt="">
+                        <img src="https://images.pexels.com/photos/1246955/pexels-photo-1246955.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                       
+                    </div>
+                  
                 </div>
                 <div class="header-title">
                     <h1>DISCOVER</h1>
@@ -244,7 +253,7 @@
                         <button>
                                 <img src="assets/images/instagram.png" alt="instagram">
                         </button><br><br>
-                        <small>&copy; Vince Panes Simple Travel Template (2019)</small>
+                        <small>&copy; Wylog Simple Travel Template (2019)</small>
                         
                     </div>
                 </div>
@@ -268,6 +277,7 @@
    
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/ui.js"></script>
 </body>
