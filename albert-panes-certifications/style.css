@@ -1,0 +1,25 @@
+h1 {
+    margin: 20px 0 20px 0;
+}
+
+h5 span {
+    font-size: small;
+}
+
+.img-thumbnail {
+    height: 300px!important;
+    width: 300px!important;
+    object-fit: cover;
+    width: auto;
+}
+
+.intro {
+    margin-top: 10%;
+}
+
+img.d-block {
+    height: 500px;
+    object-fit: contain;
+    width: 100%;
+    background: black;
+}
