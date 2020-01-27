@@ -1,0 +1,40 @@
+body {
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+body a {
+  color: white;
+}
+
+body #demo {
+  height: 500px;
+}
+
+body ul {
+  list-style-type: none;
+}
+
+body img {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 200px;
+}
+
+body .owner {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+
+body a {
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */

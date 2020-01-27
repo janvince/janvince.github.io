@@ -1,0 +1,30 @@
+body {
+    background: black;
+    color: white;
+    text-align: center;
+    a { color: white; ;}
+
+    #demo {
+        height: 500px;
+    }
+    ul {
+        list-style-type: none;
+    }
+    img {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 200px;
+    }
+    .owner {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+    }
+    a { text-align: center; }
+
+}

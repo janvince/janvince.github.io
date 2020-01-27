@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body>
+    <div class="nav">
+        <img src="/logowylog.png" alt="logo">
+        <ul>
+            <li id="demo"></li>
+        </ul>
+        <img src="./shanie.jpg" alt="shanie" class="owner">
+        <a href="https://www.linkedin.com/in/spolagne/">Shanie Polagñe</a>
+
+    </div>
+
+    <script src="lottie.js"></script>
+    <script>
+
+        var animation = bodymovin.loadAnimation({
+            container: document.getElementById('demo'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'data.json'
+        })
+    
+    </script>
+
+
+</body>
+</html>
