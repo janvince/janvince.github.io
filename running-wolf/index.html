@@ -18,10 +18,24 @@
             text-align: center;
             opacity: 1;
         }
-
+        .label {
+            position: absolute;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: white;
+            top: 20px;
+            left: 20px;
+            z-index: 100;
+        }
+        span {
+                color: rgb(83, 179, 83);
+            }     
     </style>
 </head>
 <body>
+<div class="label">
+    file size : <span>743 kb</span>
+</div>
 <!-- build:scripto --><script>(typeof navigator !== "undefined") && (function(root, factory) {
     if (typeof define === "function" && define.amd) {
         define(function() {
